@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>PetMe</title>
+  <link rel="stylesheet" href="css/petmestyles.css">
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td>
+        <h1>PetMe.com</h1>
+        <h2>Let us get to know your pet better</h2>
+      </td>
+      <td>
+        <img src="" alt="">
+      </td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <form>
+    <fieldset>
+      <legend>Choose your favorite Pet</legend>
+
+      <input type="radio" id="Cat" name="Pet" required>
+      <label for="Cat">Cat</label>
+
+      <input type="radio" id="Dog" name="Pet">
+      <label for="Dog">Dog</label>
+
+      <input type="radio" id="Bird" name="Pet">
+      <label for="Bird">Bird</label>
+
+      <input type="radio" id="Fish" name="Pet">
+      <label for="Fish">Fish</label>
+
+      <input type="radio" id="ReptileAmphibian" name="Pet">
+      <label for="ReptileAmphibian">Reptile or Amphibian</label>
+
+      <input type="radio" id="Rodent" name="Pet">
+      <label for="Rodent">Rodent</label>
+    </fieldset>
+
+    <hr>
+    <label for="numberPets">Number of Pets</label>
+    <input type="number" name="number" required>
+
+    <hr>
+    <label for="size">Choose the size of your pet</label>
+
+    <select name="size" id="size" required>
+      <option value="">--Please choose an option--</option>
+      <option value="Xlarge">Xlarge = more than 76lbs/33KG</option>
+      <option value="large">large = 56-75lbs/28-32KG</option>
+      <option value="mediun">medium = 26-55lbs/28-32KG</option>
+      <option value="small">small= 6-25lbs/28-32KG</option>
+      <option value="Xsmall">Xsmall = up to 5.0lbs/</option>
+    </select>
+
+    <hr>
+
+    <fieldset>
+      <legend>What kind of pet products do you buy the most?</legend>
+
+
+      <label for="food">food</label><br>
+      <label for="food">Quantity per month</label>
+      <input type="number" name="number" required><br>
+
+
+      <label for="toys">toys</label><br>
+      <label for="toys">Quantity per month</label>
+      <input type="number" name="number" required><br>
+
+
+      <label for="housing">Housing</label><br>
+      <label for="housing">Quantity per month</label>
+      <input type="number" name="number" required><br>
+    </fieldset>
+
+    <hr>
+
+    <label for="food">What kind of food do you prefer?</label>
+    <select name="food" id="food" required>
+      <option value="">--Please choose an option--</option>
+      <option value="dry">Dry</option>
+      <option value="wet">wet</option>
+      <option value="snack">snacks</option>
+      <option value="allfood">All of them</option>
+    </select>
+
+    <hr>
+    <label for="food">How much are you willing to spend in food per month?</label>
+    <select name="food" id="food" required>
+      <option value="">--Please choose an option--</option>
+      <option value="greatamount">More than $500</option>
+      <option value="OKamount">$300-$500</option>
+      <option value="mediumamount">$100-$300</option>
+      <option value="smallamount">$50-$100</option>
+      <option value="Cheap">Less than $50</option>
+    </select>
+
+    <hr>
+    <label for="toys">What kind of toys do you prefer?</label>
+    <select name="toys" id="toys" required>
+      <option value="">--Please choose an option--</option>
+      <option value="trackball">trackball</option>
+      <option value="Kong">sclassic Kong toy  </option>
+      <option value="launcher">ball launcher</option>
+      <option value="daybed">daybed</option>
+      <option value="willow-branch">willow-branch ball</option>
+      <option value="chew">durable chew toy </option>
+      <option value="behavioral">behavioral aid toy</option>
+      <option value="interactive">interactive toy  </option>
+      <option value="alltoys">All of them</option>
+    </select>
+
+    <hr>
+    <label for="toys">How much are you willing to spend in toys per month?</label>
+    <select name="toys" id="toys" required>
+      <option value="">--Please choose an option--</option>
+      <option value="greatamount">More than $500</option>
+      <option value="OKamount">$300-$500</option>
+      <option value="mediumamount">$100-$300</option>
+      <option value="smallamount">$50-$100</option>
+      <option value="Cheap">Less than $50</option>
+    </select>
+
+    <hr>
+    <label for="housing">What kind of housing do you prefer?</label>
+    <select name="housing" id="housing" required>
+      <option value="">--Please choose an option--</option>
+      <option value="house">house</option>
+      <option value="bed">bed</option>
+      <option value="cage">cage</option>
+      <option value="aquarium">aquarium</option>
+      <option value="treehouse">treehouse</option>
+      <option value="furniture">pet furniture</option>
+    </select>
+
+    <hr>
+    <label for="housing">How much are you willing to spend in Housing?</label>
+    <select name="house" id="housing" required>
+      <option value="">--Please choose an option--</option>
+      <option value="Xlarge">Xlarge = more than 76lbs/33KG</option>
+      <option value="large">large = 56-75lbs/28-32KG</option>
+      <option value="mediun">medium = 26-55lbs/28-32KG</option>
+      <option value="small">small= 6-25lbs/28-32KG</option>
+      <option value="Xsmall">Xsmall = up to 5.0lbs/</option>
+    </select>
+
+    <hr>
+    <input type="submit" name="SubmitInfo" required>
+  </form>
+
+  <hr>
+
+  <table>
+    <tr>
+      <td>
+        <form action="UserLogin.html" method="post" type="submit">
+          <button>Back</button>
+        </form>
+      </td>
+      <td>
+        <form action="InfoRecord.html" method="post" type="submit">
+          <button>Next</button>
+        </form>
+      </td>
+    </tr>
+  </table>
+
+
+</body>
+
+</html>
