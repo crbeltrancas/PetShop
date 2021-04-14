@@ -1,0 +1,153 @@
+/* ----------- This is where the tags will go ---------*/
+/*---- in alphabetical order----*/
+/*-- Any modification to general tags just do them here if they are special for any special
+div just try to create a new class ----*/
+hr {
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  width: 20%;
+  margin: 100px auto;
+}
+
+ul {
+
+  margin: auto;
+  list-style: circle;
+}
+
+/* ----------- This is where the classes will go ---------*/
+/*---- in alphabetical order----*/
+.bottom-text {
+  background: #0779e4;
+  color: #dae1e7;
+  font-family: "Monserrat", sans-serif;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.bottom-text-legal {
+  background: #212529;
+  color: #dae1e7;
+  font-family: "Monserrat", sans-serif;
+  text-decoration: none;
+  padding: 20px;
+}
+.bottom-text:hover {
+  color: #EAF6F6;
+}
+
+.buttonpart {
+  align: center;
+  }
+
+.containerpage1 {
+  margin: auto;
+  color: #94b5c0;
+  font-family: "sans-serif";
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.inforecordbox {
+  margin-left: 500px;
+  color: #94b5c0;
+}
+
+.legalmsg {
+  font-family: "sans-serif";
+  font-size: 20px;
+}
+
+.petinfobox {
+  margin-left: 10px;
+}
+
+.selectbutton {
+  background-color: #D1E8FF;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+.selectbutton:hover {
+  background-color: #D1E8FF;
+  color: white;
+}
+
+.topcontainer {
+  background-color: #0779e4;
+  border-width: thin;
+  color: white;
+  font-family: "Monserrat", sans-serif;
+  margin: auto;
+
+}
+
+.userinfobox {
+  margin-left: 350px;
+  font-size: 20px;
+  font-family: "sans-serif";
+  color: #94b5c0;
+  text-shadow: 2px 2px #ccf2f4;
+}
+
+.userprofilebox {
+  margin-left: 10px;
+}
+
+/* ----------- This is where the id selectors will go ---------*/
+/*---- in alphabetical order----*/
+/*---- id's will be mainly used to link JS code to the database and lasts pages
+try to figure how to link the id to the last page and the profle----*/
+#Bird {}
+
+#Cat {}
+
+#Dog {}
+
+#Fish {}
+
+#foodkind {}
+
+#foodmonth {}
+
+#foodspend {}
+
+#housingkind {}
+
+#housingspend {}
+
+#Housingmonth {}
+
+#numberpets {}
+
+#petsize {}
+
+#ReptileAmphibian {}
+
+#Rodent {}
+
+#toyskind {}
+
+#toysmonth {}
+
+#toysspend {}
+
+#Usercity {}
+
+#UserCountry {}
+
+#Useremail {}
+
+#UserLastName {}
+
+#UserName {}
+
+#UserPhoneNumber {}

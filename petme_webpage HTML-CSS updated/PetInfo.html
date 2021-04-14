@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>PetMe</title>
+  <link rel="stylesheet" href="css/petmestyles.css">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!--This is the navigation bar part.-->
+  <nav class="navbar bg-primary navbar-expand-lg navbar-dark text-right">
+    <a class="navbar-brand" href="welcomePage.html">
+      <img class="rounded mx-auto" src="images/PetmeLogo.png" alt="logo-image" width="70" height="70">
+      PetMe
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="UserLogin.html">Sign Up</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="legal.html">Legal</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+  <!--This is the intro part.-->
+  <div class="topintro">
+    <h2 style="padding:20px;">Let's get to know your pet</h2>
+  </div>
+
+  <hr>
+
+  <!--This is where user inputs pet info-->
+  <div class="container" style="padding:20px;">
+    <form class="petinfobox" action="infoRecord.html" method="post">
+      <fieldset>
+        <legend>Choose your favorite Pet</legend>
+
+        <!--This is for pet seletion -->
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <div class="btn-group-toggle" data-toggle="buttons">
+                <input type="image" class="btn btn-outline-primary" id="Cat" src="images/caticon.png" width="100" height="100" name="Pet">
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="btn-group-toggle" data-toggle="buttons">
+                <input type="image" class="btn btn-outline-primary" id="Dog" src="images/dogicon1.png" width="100" height="100" name="Pet">
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="btn-group-toggle" data-toggle="buttons">
+                <input type="image" class="btn btn-outline-primary" src="images/macaw.png" id="Bird" name="Pet" width="100" height="100">
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="btn-group-toggle" data-toggle="buttons">
+                <input type="image" class="btn btn-outline-primary " src="images/clown-fish.png" id="Fish" name="Pet" width="100" height="100">
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="btn-group-toggle" data-toggle="buttons">
+                <input type="image" class="btn btn-outline-primary" src="images/tortoise.png" id="ReptileAmphibian" name="Pet" width="100" height="100">
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="btn-group-toggle" data-toggle="buttons">
+                <input type="image" class="btn btn-outline-primary " src="images/guinea-pig.png" id="Rodent" name="Pet" width="100" height="100">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- <hr>
+        <!--This is number of pets-->
+        <!-- <label for="numberPets">Number of Pets</label>
+        <input type="number" class="form-control" name="number" id="numberpets" required> -->
+
+        <hr>
+        <!--This is pet size-->
+        <label for="size">Choose the size of your pet</label>
+
+        <select name="size" class="form-control" id="petsize" required>
+          <option value="">--Please choose an option--</option>
+          <option value="Xlarge">Xlarge = more than 76lbs/33KG</option>
+          <option value="large">large = 56-75lbs/28-32KG</option>
+          <option value="mediun">medium = 26-55lbs/28-32KG</option>
+          <option value="small">small= 6-25lbs/28-32KG</option>
+          <option value="Xsmall">Xsmall = up to 5.0lbs/</option>
+        </select>
+
+        <hr>
+
+        <!--This is quantity of purchase a month -->
+        <fieldset>
+          <legend>What kind of pet products do you buy the most?</legend>
+
+
+          <label for="food">food</label><br>
+          <label for="food">Quantity per month</label>
+          <input type="number" class="form-control" name="number" id="foodmonth" required><br>
+
+
+          <label for="toys">toys</label><br>
+          <label for="toys">Quantity per month</label>
+          <input type="number" class="form-control" name="number" id="toysmonth" required><br>
+
+
+          <label for="housing">Housing</label><br>
+          <label for="housing">Quantity per month</label>
+          <input type="number" class="form-control" name="number" id="Housingmonth" required><br>
+        </fieldset>
+
+        <hr>
+
+        <!--This is kind of food and money spend user prefers -->
+        <label for="food">What kind of food do you prefer?</label>
+        <select name="food" class="form-control" id="foodkind" required>
+          <option value="">--Please choose an option--</option>
+          <option value="dry">Dry</option>
+          <option value="wet">wet</option>
+          <option value="snack">snacks</option>
+          <option value="allfood">All of them</option>
+        </select>
+
+        <hr>
+        <label for="food">How much are you willing to spend in food per month?</label>
+        <select name="food" class="form-control" id="foodspend" required>
+          <option value="">--Please choose an option--</option>
+          <option value="greatamount">More than $500</option>
+          <option value="OKamount">$300-$500</option>
+          <option value="mediumamount">$100-$300</option>
+          <option value="smallamount">$50-$100</option>
+          <option value="Cheap">Less than $50</option>
+        </select>
+
+        <hr>
+
+        <!--This is kind of toys and money spend user prefers -->
+        <label for="toys">What kind of toys do you prefer?</label>
+        <select name="toys" class="form-control" id="toyskind" required>
+          <option value="">--Please choose an option--</option>
+          <option value="trackball">trackball</option>
+          <option value="Kong">sclassic Kong toy </option>
+          <option value="launcher">ball launcher</option>
+          <option value="daybed">daybed</option>
+          <option value="willow-branch">willow-branch ball</option>
+          <option value="chew">durable chew toy </option>
+          <option value="behavioral">behavioral aid toy</option>
+          <option value="interactive">interactive toy </option>
+          <option value="alltoys">All of them</option>
+        </select>
+
+        <hr>
+        <label for="toys">How much are you willing to spend in toys per month?</label>
+        <select name="toys" class="form-control" id="toysspend" required>
+          <option value="">--Please choose an option--</option>
+          <option value="greatamount">More than $500</option>
+          <option value="OKamount">$300-$500</option>
+          <option value="mediumamount">$100-$300</option>
+          <option value="smallamount">$50-$100</option>
+          <option value="Cheap">Less than $50</option>
+        </select>
+
+        <hr>
+
+        <!--This is kind of housing and money spend user prefers -->
+        <label for="housing">What kind of housing do you prefer?</label>
+        <select name="housing" class="form-control" id="housingkind" required>
+          <option value="">--Please choose an option--</option>
+          <option value="house">house</option>
+          <option value="bed">bed</option>
+          <option value="cage">cage</option>
+          <option value="aquarium">aquarium</option>
+          <option value="treehouse">treehouse</option>
+          <option value="furniture">pet furniture</option>
+        </select>
+
+        <hr>
+        <label for="housing">How much are you willing to spend in Housing?</label>
+        <select name="house" class="form-control" id="housingspend" required>
+          <option value="">--Please choose an option--</option>
+          <option value="greatamount">More than $500</option>
+          <option value="OKamount">$300-$500</option>
+          <option value="mediumamount">$100-$300</option>
+          <option value="smallamount">$50-$100</option>
+          <option value="Cheap">Less than $50</option>
+        </select>
+
+        <hr>
+        <!--This is submit pet info -->
+        <input class="btn btn-outline-primary btn-lg" type="submit" name="SubmitInfo" required>
+    </form>
+  </div>
+
+  <hr>
+
+  <!--This is to go back home page-->
+  <div class="buttonpart" style="padding:20px;">
+    <form action="welcomePage.html" method="post" type="submit">
+      <button class="btn btn-outline-primary btn-lg">Back to Home page</button>
+    </form>
+  </div>
+
+  <hr class="line">
+
+  <!--This is the legal message-->
+  <div class="bottom-text mx-auto" style="padding:20px;">
+    <img class="rounded mx-auto center" src="images/PetmeLogo.png" alt="logo-image" width="100" height="100">
+    <p>
+      Data about your interaction with this site and the ads shown to you may be shared
+      with companies involved in the delivery and or personalization of ads on this site and elsewhere online.
+      By creating a new account you are accepting our terms and conditions. </p>
+  </div>
+
+</body>
+
+</html>

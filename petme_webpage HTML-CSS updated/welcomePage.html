@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>PetMe</title>
+  <link rel="stylesheet" href="css/petmestyles.css">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!--This is the navigation bar part.-->
+  <nav class="navbar bg-primary navbar-expand-lg navbar-dark text-right">
+    <a class="navbar-brand" href="welcomePage.html">
+      <img class="rounded mx-auto" src="images/PetmeLogo.png" alt="logo-image" width="70" height="70">
+      PetMe
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="UserLogin.html">Sign Up</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="legal.html">Legal</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+  <!--This is the guidng part-->
+  <div class="card" style="width: 20rem; margin:auto; border-style: none;">
+    <div class="card-body">
+      <img class="card-img-top" src="images/pets.gif" alt="Card image cap" width="100" height="100">
+      <h3 class="card-title" style="margin:auto;">Let's start</h3>
+      <ul class="">
+        <li>Create an account</li>
+        <li>Fill in the survey</li>
+        <li>Get a recommended plan</li>
+        <li>You and your pet will be happy!</li>
+      </ul>
+
+      <!--This is for the create account button.-->
+      <div class="buttonpart">
+        <form action="UserLogin.html" method="post" type="submit">
+          <button class="btn btn-outline-primary btn-lg">Create an Account</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!--This is the legal message-->
+  <div class="bottom-text mx-auto">
+    <img class="rounded mx-auto center" src="images/PetmeLogo.png" alt="logo-image" width="200" height="200">
+    <p>
+      Data about your interaction with this site and the ads shown to you may be shared
+      with companies involved in the delivery and or personalization of ads on this site and elsewhere online.
+      By creating a new account you are accepting our terms and conditions. </p>
+  </div>
+
+</body>
+
+</html>
